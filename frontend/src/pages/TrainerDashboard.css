@@ -1,0 +1,33 @@
+/* src/pages/TrainerDashboard.css */
+
+.trainer-dashboard-page {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.trainer-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.1); /* Subtle purple shadow */
+  border-left: 5px solid #7c3aed; /* Purple accent matching the layout */
+  max-width: 800px;
+}
+
+.trainer-card h2 {
+  color: #1f2937;
+  margin-top: 0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.trainer-card p {
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Optional animation for a smooth entrance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

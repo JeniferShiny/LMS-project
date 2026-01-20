@@ -1,0 +1,131 @@
+html, body {
+    height: auto !important;
+    overflow: auto !important;
+}
+
+.form-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px; /* More space at top/bottom */
+    min-height: 100vh;   /* Takes full screen height */
+    width: 100%;
+    overflow-y: visible; /* Ensure content isn't clipped */
+    box-sizing: border-box;
+}
+
+.form-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    animation: slideUp 0.4s ease-out;
+    margin-bottom: 50px;
+}
+
+.form-header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1.5rem;
+}
+
+.form-header h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.form-header p {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* 1. Base styles for both */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #ffffff; 
+    color: #1e293b;            
+    transition: all 0.2s;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* 2. Style for INPUT - Reset background completely */
+.form-group input {
+    appearance: auto; /* Restores standard typing behavior */
+    background-image: none !important; /* Removes the blocking arrow */
+    cursor: text;
+}
+
+/* 3. Style for SELECT - Add the arrow icon here ONLY */
+.form-group select {
+    appearance: none; /* Removes default arrow */
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.1em;
+    padding-right: 2.5rem;
+}
+
+/* Buttons */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.submit-btn {
+    flex: 2;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.875rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #4f46e5;
+}
+
+.cancel-btn {
+    flex: 1;
+    background-color: #f1f5f9;
+    color: #64748b;
+    border: none;
+    padding: 0.875rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cancel-btn:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,72 @@
+.trainer-container {
+  min-height: 100vh;
+  background-color: #f3f0ff; /* Light purple tint */
+}
+
+.trainer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 65px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #7c3aed; /* Purple accent */
+}
+
+.trainer-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #7c3aed;
+  cursor: pointer;
+}
+
+.trainer-profile-area {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.trainer-user-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.trainer-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #1f2937;
+}
+
+.trainer-tag {
+  font-size: 0.7rem;
+  color: #7c3aed;
+  font-weight: bold;
+}
+
+.trainer-logout-btn {
+  background-color: #1f2937; /* Dark button for contrast */
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.trainer-logout-btn:hover {
+  background-color:#dc2626;
+;
+}
+
+.trainer-main-content {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.trainer-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+}

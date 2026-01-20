@@ -1,0 +1,137 @@
+/* 1. Force the viewport to be exactly the screen size with no scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevents accidental scrollbars */
+}
+
+/* 2. The Wrapper: This is the "Full Screen" part */
+.login-screen-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;     /* Centers vertically */
+    justify-content: center;    /* Centers horizontally */
+    background-color:#4f46e5;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(129, 140, 248, 0.12) 0px, transparent 50%);
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* 3. The Container: This is the "Small Middle Card" */
+.login-container-card {
+    background: #ffffff;
+    width: 90%;             /* Responsive width for mobile */
+    max-width: 380px;        /* Made it smaller (was 440px) for a tighter look */
+    padding: 2.5rem;         /* Slightly reduced padding */
+    border-radius: 20px;
+    box-shadow: 
+        0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+    animation: fadeInScale 0.4s ease-out; /* Smooth entrance */
+}
+
+/* Animation for that "Premium" feel */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* 4. Internal Elements (Compact versions) */
+.login-brand-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.login-brand-section h2 {
+    font-size: 1.5rem; /* Smaller title */
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.login-brand-section p {
+    font-size: 1.5rem; /* Smaller title */
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+}
+
+.login-field label {
+    display: block;
+    font-size: 0.8rem; /* Smaller labels */
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 0.4rem;
+}
+
+.login-field input {
+    width: 100%;
+    padding: 0.75rem 1rem; /* Compact inputs */
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    margin-bottom: 0.85rem;
+}
+
+.login-primary-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 0.85rem;
+}
+
+.login-alert-box {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-icon {
+  font-size: 1.1rem;
+}
+
+.success-alert {
+    background-color: #f0fdf4 !important; /* Soft Green */
+    color: #166534 !important;
+    border-left: 4px solid #22c55e !important;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+    transform: translateX(-4px); /* Subtle nudge to the left on hover */
+    text-decoration: none !important;
+}

@@ -1,0 +1,21 @@
+/* Styles for the inside of the Dashboard */
+
+.dashboard-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-content h1 {
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  background-color: #eff6ff;
+  border-left: 4px solid #3b82f6;
+  padding: 1rem;
+  color: #1e40af;
+  border-radius: 4px;
+}
