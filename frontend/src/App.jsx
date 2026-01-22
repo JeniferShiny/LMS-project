@@ -42,7 +42,7 @@ function App() {
         </Route>
 
         {/* Trainer Dashboard */}
-        <Route element={<ProtectedRoute allowedRoles={['instructor']} />}>
+        <Route element={<ProtectedRoute allowedRoles={['trainer']} />}>
           <Route element={<TrainerLayout />}>
             <Route path="/trainer-dashboard" element={<TrainerDashboard />} />
           </Route>

@@ -21,7 +21,7 @@ const LoginPage = () => {
       case 'admin':
         navigate('/dashboard');
         break;
-      case 'instructor':
+      case 'trainer':
         navigate('/trainer-dashboard');
         break;
       case 'learner':
